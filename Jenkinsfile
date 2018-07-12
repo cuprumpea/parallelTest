@@ -3,9 +3,9 @@ pipeline {
   stages {
     stage('check out') {
       parallel {
-        stage('check out') {
+        stage('1check out') {
           steps {
-            echo 'check out'
+            echo '1check out'
           }
         }
         stage('parallel1ofcheck out') {
@@ -27,9 +27,9 @@ pipeline {
     }
     stage('build') {
       parallel {
-        stage('build') {
+        stage('1build') {
           steps {
-            echo 'build'
+            echo '1build'
           }
         }
         stage('Paralle1OfBuild') {
